@@ -1,4 +1,4 @@
-# 🔒 x402 Paywall — Stripe for AI Agents
+# x402 Paywall — Stripe for AI Agents
 
 > **Plug-and-play middleware that turns any API endpoint into an x402-payable service.**  
 > Built on [GOAT Network](https://goat.network) — Bitcoin-secured infrastructure for the AI agent economy.
@@ -9,7 +9,7 @@
 
 ---
 
-## ✨ What is x402 Paywall?
+## What is x402 Paywall?
 
 **x402 Paywall** is a developer toolkit for monetizing APIs through the [x402 protocol](https://docs.goat.network/docs/build/x402/overview) (HTTP 402 Payment Required). It lets you:
 
@@ -39,7 +39,7 @@ app.use("/api/premium", x402Paywall().protect({ price: "0.01" }));
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 ```
 x402-paywall/
@@ -82,7 +82,7 @@ x402-paywall/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Install
 
@@ -141,7 +141,7 @@ function App() {
 
 ---
 
-## 🧩 Packages
+## Packages
 
 | Package | Description |
 |---------|-------------|
@@ -178,7 +178,7 @@ Available agent actions:
 
 ---
 
-## 🎮 Demo
+## Demo
 
 ```bash
 # Install dependencies
@@ -196,21 +196,7 @@ pnpm run demo
 
 ---
 
-## 📋 Grant Application
-
-This project was built for the [GOAT Network Builder Program](https://www.goat.network/builder-program).  
-It solves the #1 barrier to x402 adoption — making it trivially easy to add x402 payments to any API.
-
-**Key differentiators:**
-- 🧩 **One-line integration** — developer experience is the priority
-- 🤖 **Agent-native** — full AgentKit ActionProvider for autonomous agent payments
-- 🎨 **Drop-in UI** — React components for instant checkout UX
-- 🔌 **Framework-agnostic** — Express, Cloudflare Workers, and more
-- 💰 **Free tier** — OSS self-hosted version with premium cloud option
-
----
-
-## 🛠 Development
+## Development
 
 ```bash
 # Install all dependencies
@@ -228,6 +214,6 @@ pnpm demo
 
 ---
 
-## 📄 License
+## License
 
 MIT — Built for the GOAT Network ecosystem.
