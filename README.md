@@ -180,19 +180,38 @@ Available agent actions:
 
 ## Demo
 
-```bash
-# Install dependencies
-pnpm install
+> ![x402 Paywall demo flow](assets/demo-paywall-flow.gif)
 
-# Start the demo (server + frontend)
+Run the full-stack demo in one command to see the paywall in action — from payment request to access granted.
+
+```bash
 pnpm run demo
 ```
+
+### Step-by-step walkthrough
+
+| Step | What happens |
+|------|--------------|
+| 1 | Two premium API cards are shown. Each is locked behind a paywall. Click **"Access Premium Data"** on any card to start. |
+| 2 | A **"Payment Required"** modal slides in with the price (0.01 USDC). Click **"Pay 0.01 USDC"** to proceed. |
+| 3 | Payment details are displayed — **Amount**, **Send To** address, **Chain ID**. Click **Confirm Payment** to simulate the transfer. |
+| 4 | Access granted! Premium market data is unlocked — BTC Price, ETH Price, GOAT Staking APY, TVL. Session is cached for 1 hour. |
 
 - **Frontend:** http://localhost:5173
 - **Server:** http://localhost:3001
 - **Paywalled APIs:**
   - `GET /api/premium-data` — 0.01 USDC
   - `GET /api/ai-inference` — 0.05 GOAT
+
+### Run it yourself
+
+```bash
+git clone https://github.com/zynorr/x402-paywall.git
+cd x402-paywall
+pnpm install
+pnpm run demo
+# Open http://localhost:5173
+```
 
 ---
 
