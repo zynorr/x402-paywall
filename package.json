@@ -1,0 +1,18 @@
+{
+  "name": "x402-paywall",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Plug-and-play middleware that turns any API endpoint into an x402-payable service — Stripe for AI agents on GOAT Network",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "dev": "pnpm -r --parallel run dev",
+    "typecheck": "pnpm -r run typecheck",
+    "lint": "pnpm -r run lint",
+    "clean": "pnpm -r run clean",
+    "demo": "pnpm --filter @x402-paywall/demo dev"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@9.0.0"
+}
